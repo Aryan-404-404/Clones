@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-black text-white text-xl">
+    <div class="flex container mx-auto">
+        <div class="left w-[60%] top-0 sticky z-0 h-[800px]">
+            <div class="logo flex justify-center w-full my-3"><img class="invert w-12 "
+                    src="Resaurces/twitter-x@logotyp.us.svg" alt="twitter logo"></div>
+            <div class="sideBar flex justify-end mr-5">
+                <ul class="space-y-4 ">
+                    <li
+                        class="flex justify-start items-center gap-4 p-[8px] font-bold w-fit hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
+                        <i class="fa-solid fa-house"></i> Home
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-4 p-[8px] w-full hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
+                        <i class="fa-solid fa-magnifying-glass"></i> Explore
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-4 p-[8px] w-fit hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
+                        <i class="fa-solid fa-bell"></i> Notifications
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-4 p-[8px] w-fit hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
+                        <i class="fa-solid fa-message"></i> Messages
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-4 p-[8px] w-fit hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
+                        <i class="fa-solid fa-table-list"></i>Lists
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-4 p-[8px] w-fit hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
+                        <i class="fa-solid fa-bookmark"></i> Bookmark
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-4 p-[8px] w-fit hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
+                        <i class="fa-solid fa-users"></i>Communities
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-4 p-[8px] w-fit hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
+                        <i class="fa-solid fa-xmark"></i>Premium
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-4 p-[8px] w-fit hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
+                        <i class="fa-solid fa-user"></i>Profile
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-4 p-[8px] w-fit hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
+                        More</li>
+                    <li><button class="bg-white text-black font-bold h-[50px] w-40 rounded-full">Post</button></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <div class="mid w-full border-[1px] border-x-gray-600 border-y-black">
+            <div class="nav flex h-[50px] w-full border-b-[0.5px] border-gray-600 pt-2">
+                <div class="forU w-[50%] flex justify-center text-center text-[16px] font-bold">For you</div>
+                <div class="following w-[50%] flex justify-center text-center text-[16px] font-bold">Following</div>
+            </div>
+            <div class="postbtnn my-5 border-b-[0.5px] border-gray-600 pb-5">
+                <div class=" flex mx-5">
+                    <div class="img h-[40px] w-[40px] bg-amber-500 rounded-full"><img class="rounded-full" src="https://lh3.googleusercontent.com/a/ACg8ocLeO9esWtfc7WW_7u3iTvheIqUMAO8QmEE1nVbbw8QhSsjSkSAj=s360-c-no" alt="profileIMG"></div>
+                    <h2 class="ml-3 opacity-[0.6]">What's happening?</h2>
+                </div>
+                <div class="reply border-b-[0.5px] border-gray-600 pb-3 mx-5">
+                    <p class="text-blue-700 text-[14px] ml-[50px] hover:underline cursor-pointer">Everyone can reply</p>
+                </div>
+                <div class="postbtn flex mt-5 justify-center items-center gap-7 px-5">
+                    <div class="buttons"> <i class="fa-regular fa-image text-[16px]" style="color: #B197FC;"></i> </div>
+                    <div class="buttons"> <i class="fa-solid fa-bars-progress text-[16px]" style="color: #B197FC;"></i>
+                    </div>
+                    <div class="buttons"> <i class="fa-solid fa-face-smile text-[16px]" style="color: #B197FC;"></i>
+                    </div>
+                    <div class="buttons"> <i class="fa-solid fa-calendar-days text-[16px]" style="color: #B197FC;"></i>
+                    </div>
+                    <div class="buttons"> <i class="fa-solid fa-location-dot text-[16px]" style="color: #B197FC;"></i>
+                    </div>
+                    <button
+                        class="h-[35px] w-[60px] bg-gray-400 rounded-full text-[15px] font-bold text-black  ml-auto">Post</button>
+                </div>
+            </div>
+
+            <div class="posts w-full">
+                <div class="post mx-2 my-5 pb-3 border-b-[0.5px] border-gray-600">
+                    <div class="info flex">
+                        <div class="img h-10 w-10"><img class="rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1871285612105674752/rKi4Km6B_400x400.png"
+                                alt="">
+                        </div>
+                        <div class="userName text-[16px] ml-3 flex pt-1">
+                            <span class="font-bold mr-2"> The AI Guru</span><span
+                                class="font-light text-gray-400">@AI_GuruX·21h</span>
+                        </div>
+                    </div>
+                    <div class="content ml-12">
+                        <div class="bio text-[16px] mb-4">Internet hides a lot of secrets.</div>
+                        <div class="image mr-3">
+                            <img class="rounded-2xl"
+                                src="https://pbs.twimg.com/media/Gud80neaoAU1Dao?format=jpg&name=small" alt="image">
+                        </div>
+                        <div class="interactions w-full flex gap-15 mt-3 ml-2">
+                            <div class="comment text-[14px] text-gray-500"><i
+                                    class="fa-regular fa-comment text-gray-500 text-[16px]"></i> 102</div>
+                            <div class="repost text-[14px] text-gray-500"> <i
+                                    class="fa-solid fa-rotate-left text-gray-500 text-[16px]"></i> 10</div>
+                            <div class="like text-[14px] text-gray-500"> <i
+                                    class="fa-regular fa-heart text-gray-500 text-[16px]"></i> 12k</div>
+                            <div class="view text-[14px] text-gray-500"> <i
+                                    class="fa-solid fa-chart-simple text-gray-500 text-[16px]"></i> 80k</div>
+                            <div class="save text-[14px] text-gray-500"> <i
+                                    class="fa-regular fa-bookmark text-gray-500 text-[16px]"></i></div>
+                            <div class="share text-[14px] text-gray-500"><i
+                                    class="fa-solid fa-arrow-up-from-bracket text-gray-500 text-[16px]"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post mx-2 my-5 pb-3 border-b-[0.5px] border-gray-600">
+                    <div class="info flex">
+                        <div class="img h-10 w-10"><img class="rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1833509376528945157/5AeMNn9f_400x400.jpg"
+                                alt="">
+                        </div>
+                        <div class="userName text-[16px] ml-3 flex pt-1">
+                            <span class="font-bold mr-2"> Narendra Modi</span>
+                            <span class="font-light text-gray-400">@narendramodi.12h</span>
+                        </div>
+                    </div>
+                    <div class="content ml-12">
+                        <div class="bio text-[16px] mb-4">हूल दिवस हमें अपने आदिवासी समाज के अदम्य साहस और अद्भुत
+                            पराक्रम की याद दिलाता है। ऐतिहासिक संथाल क्रांति से जुड़े इस विशेष अवसर पर सिदो-कान्हू,
+                            चांद-भैरव और फूलो-झानो के साथ ही उन सभी वीर-वीरांगनाओं का हृदय से नमन और वंदन, जिन्होंने
+                            विदेशी हुकूमत के अत्याचार के खिलाफ लड़ते हुए अपने जीवन का बलिदान कर दिया। उनकी शौर्यगाथा देश
+                            की हर पीढ़ी को मातृभूमि के स्वाभिमान की रक्षा के लिए प्रेरित करती रहेगी।</div>
+                        <div class="interactions w-full flex gap-15 mt-3 ml-2">
+                            <div class="comment text-[14px] text-gray-500"><i
+                                    class="fa-regular fa-comment text-gray-500 text-[16px]"></i> 102</div>
+                            <div class="repost text-[14px] text-gray-500"> <i
+                                    class="fa-solid fa-rotate-left text-gray-500 text-[16px]"></i> 10</div>
+                            <div class="like text-[14px] text-gray-500"> <i
+                                    class="fa-regular fa-heart text-gray-500 text-[16px]"></i> 12k</div>
+                            <div class="view text-[14px] text-gray-500"> <i
+                                    class="fa-solid fa-chart-simple text-gray-500 text-[16px]"></i> 80k</div>
+                            <div class="save text-[14px] text-gray-500"> <i
+                                    class="fa-regular fa-bookmark text-gray-500 text-[16px]"></i></div>
+                            <div class="share text-[14px] text-gray-500"><i
+                                    class="fa-solid fa-arrow-up-from-bracket text-gray-500 text-[16px]"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post mx-2 my-5 pb-3 border-b-[0.5px] border-gray-600">
+                    <div class="info flex">
+                        <div class="img h-10 w-10"><img class="rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1710964597489029120/2akrQaAj_400x400.jpg"
+                                alt="img">
+                        </div>
+                        <div class="userName text-[16px] ml-3 flex pt-1">
+                            <span class="font-bold mr-2">Congress</span>
+                            <span class="font-light text-gray-400">@INCIndia·21h</span>
+                        </div>
+                    </div>
+                    <div class="content ml-12">
+                        <div class="bio text-[16px] mb-4">धैर्य का छोटा हिस्सा भी एक टन उपदेश से बेहतर है।</div>
+                        <div class="image mr-3">
+                            <img class="rounded-2xl"
+                                src="https://pbs.twimg.com/media/Gun2MHAXYAAhVly?format=jpg&name=900x900" alt="image">
+                        </div>
+                        <div class="interactions w-full flex gap-15 mt-3 ml-2">
+                            <div class="comment text-[14px] text-gray-500"><i
+                                    class="fa-regular fa-comment text-gray-500 text-[16px]"></i> 102</div>
+                            <div class="repost text-[14px] text-gray-500"> <i
+                                    class="fa-solid fa-rotate-left text-gray-500 text-[16px]"></i> 10</div>
+                            <div class="like text-[14px] text-gray-500"> <i
+                                    class="fa-regular fa-heart text-gray-500 text-[16px]"></i> 12k</div>
+                            <div class="view text-[14px] text-gray-500"> <i
+                                    class="fa-solid fa-chart-simple text-gray-500 text-[16px]"></i> 80k</div>
+                            <div class="save text-[14px] text-gray-500"> <i
+                                    class="fa-regular fa-bookmark text-gray-500 text-[16px]"></i></div>
+                            <div class="share text-[14px] text-gray-500"><i
+                                    class="fa-solid fa-arrow-up-from-bracket text-gray-500 text-[16px]"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post mx-2 my-5 pb-3 border-b-[0.5px] border-gray-600">
+                    <div class="info flex">
+                        <div class="img h-10 w-10"><img class="rounded-full"
+                                src="https://lh3.googleusercontent.com/a/ACg8ocLeO9esWtfc7WW_7u3iTvheIqUMAO8QmEE1nVbbw8QhSsjSkSAj=s360-c-no"
+                                alt="">
+                        </div>
+                        <div class="userName text-[16px] ml-3 flex pt-1">
+                            <span class="font-bold mr-2">Aryan</span><span
+                                class="font-light text-gray-400">@Aryan_ZzZzZz·21h</span>
+                        </div>
+                    </div>
+                    <div class="content ml-12">
+                        <div class="bio text-[16px] mb-4">Diving deep in MERN Stack development</div>
+                        <div class="image mr-3">
+                            <img class="rounded-2xl"
+                                src="https://imgs.search.brave.com/_cEbP-uDU0rgZrh6uoELJfw2xjq2ogQGdnlEPTHIdJg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTM3/MzMxNTAwL3Bob3Rv/L3Byb2dyYW1taW5n/LWNvZGUtYWJzdHJh/Y3QtdGVjaG5vbG9n/eS1iYWNrZ3JvdW5k/LW9mLXNvZnR3YXJl/LWRldmUuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPWpsWWVz/OFpmbkNtRDBsTG4t/dkt2elFvS1hyV2FF/Y1Z5cEhuQjVNdU8t/Zzg9"
+                                alt="image">
+                        </div>
+                        <div class="interactions w-full flex gap-15 mt-3 ml-2">
+                            <div class="comment text-[14px] text-gray-500"><i
+                                    class="fa-regular fa-comment text-gray-500 text-[16px]"></i> 102</div>
+                            <div class="repost text-[14px] text-gray-500"> <i
+                                    class="fa-solid fa-rotate-left text-gray-500 text-[16px]"></i> 10</div>
+                            <div class="like text-[14px] text-gray-500"> <i
+                                    class="fa-regular fa-heart text-gray-500 text-[16px]"></i> 12k</div>
+                            <div class="view text-[14px] text-gray-500"> <i
+                                    class="fa-solid fa-chart-simple text-gray-500 text-[16px]"></i> 80k</div>
+                            <div class="save text-[14px] text-gray-500"> <i
+                                    class="fa-regular fa-bookmark text-gray-500 text-[16px]"></i></div>
+                            <div class="share text-[14px] text-gray-500"><i
+                                    class="fa-solid fa-arrow-up-from-bracket text-gray-500 text-[16px]"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="right w-full top-0 sticky z-0 h-[900px]">
+            <div
+                class="search flex rounded-full px-2 py-2 border-[0.5px] border-gray-600 hover:border-1 w-[70%] mx-3 my-3">
+                <div class="flex justify-center items-center searchIcon text-[16px]"><i
+                        class="fa-solid fa-magnifying-glass"></i></div>
+                <input type="text" class="bg-black text-white px-2 w-fit focus:outline-none text-[16px]"
+                    placeholder="Search">
+            </div>
+            <div class="subs w-[70%] mx-5 my-5 p-2 border-[0.5px] border-gray-600 rounded-2xl">
+                <h2 class="text-[20px] font-bold my-2 mx-3">Subscribe to Premium</h2>
+                <p class="text-[15px] my-2 mx-3">Subscribe to unlock new features and if eligible, receive a share of
+                    revenue.</p>
+                <button
+                    class="subscribe rounded-full bg-blue-400 h-[34px] hover:cursor-pointer hover:bg-blue-500 px-6 text-[15px] mx-3 mb-3">Subscribe</button>
+            </div>
+
+            <div class="follow_suggestion w-[70%] mx-5 my-5 p-2 border-[0.5px] border-gray-600 rounded-2xl">
+                <h2 class="text-[20px] font-bold my-2 ml-2">Who to follow</h2>
+                <div class="acc flex justify-start gap-2 ml-2 my-4">
+                    <div class="profile h-[40px] w-[40px] bg-red-50 rounded-full"><img class="rounded-full" src="https://imgs.search.brave.com/CJz-7msFpIgH-VCe0qeqhq8E7ZS7wr_k8w626tKi9gA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9paDEu/cmVkYnViYmxlLm5l/dC9pbWFnZS4xMjI5/MzE5MTQuNDYxNS9z/dCxzbWFsbCw1MDd4/NTA3LXBhZCw2MDB4/NjAwLGY4ZjhmOC51/Mi5qcGc" alt=""></div>
+                    <div class="name text-[16px]">
+                        <div class="font-bold">ISRO</div>
+                        <div class="font-light">@isro</div>
+                    </div>
+                    <div
+                        class="follow-btn bg-white text-black rounded-full text-[16px] px-3 font-bold h-[30px] ml-auto mr-[5px]">
+                        <button class="flex justify-center text-center pt-1">Follow</button>
+                    </div>
+                </div>
+                <div class="acc flex justify-start gap-2 ml-2 my-4">
+                    <div class="profile h-[40px] w-[40px] bg-red-50 rounded-full"><img class="rounded-full" src="https://pbs.twimg.com/profile_images/1562753500726976514/EPSUNyR3_400x400.jpg" alt=""></div>
+                    <div class="name text-[16px]">
+                        <div class="font-bold">Virat Kohli</div>
+                        <div class="font-light">@imVKohli</div>
+                    </div>
+                    <div
+                        class="follow-btn bg-white text-black rounded-full text-[16px] px-3 font-bold h-[30px] ml-auto mr-[5px]">
+                        <button class="flex justify-center text-center pt-1">Follow</button>
+                    </div>
+                </div>
+                <div class="acc flex justify-start gap-2 ml-2 my-4">
+                    <div class="profile h-[40px] w-[40px] bg-red-50 rounded-full"><img class="rounded-full" src="https://pbs.twimg.com/profile_images/1911832239635091456/v-0F5atF_400x400.jpg" alt=""></div>
+                    <div class="name text-[16px]">
+                        <div class="font-bold">Steve Harvey</div>
+                        <div class="font-light">@IAmSteveHarvey</div>
+                    </div>
+                    <div
+                        class="follow-btn bg-white text-black rounded-full text-[16px] px-3 font-bold h-[30px] ml-auto mr-[5px]">
+                        <button class="flex justify-center text-center pt-1">Follow</button>
+                    </div>
+                </div>
+                <div class="acc flex justify-start gap-2 ml-2 my-4">
+                    <div class="profile h-[40px] w-[40px] bg-red-50 rounded-full"><img class="rounded-full" src="https://pbs.twimg.com/profile_images/1810258334651494400/Gc3PZMyU_400x400.jpg" alt=""></div>
+                    <div class="name text-[16px]">
+                        <div class="font-bold">Rohit Sharma</div>
+                        <div class="font-light">@IamRo45</div>
+                    </div>
+                    <div
+                        class="follow-btn bg-white text-black rounded-full text-[16px] px-3 font-bold h-[30px] ml-auto mr-[5px]">
+                        <button class="flex justify-center text-center pt-1">Follow</button>
+                    </div>
+                </div>
+                <div class="acc flex justify-start gap-2 ml-2 my-4">
+                    <div class="profile h-[40px] w-[40px] bg-red-50 rounded-full"><img class="rounded-full" src="https://pbs.twimg.com/profile_images/1404378291599937536/b-r3SWlW_400x400.jpg" alt=""></div>
+                    <div class="name text-[16px]">
+                        <div class="font-bold">ICC</div>
+                        <div class="font-light">@ICC</div>
+                    </div>
+                    <div
+                        class="follow-btn bg-white text-black rounded-full text-[16px] px-3 font-bold h-[30px] ml-auto mr-[5px]">
+                        <button class="flex justify-center text-center pt-1">Follow</button>
+                    </div>
+                </div>
+
+                <p class="text-blue-500 font-light text-[16px] ml-4 mb-5">Show more</p>
+            </div>
+            <div class="r-footer opacity-[0.6] font-light text-[0.8rem] w-[70%] flex text-center my-5 mx-5">
+                <ul class="flex gap-6 flex-wrap">
+                    <li>Terms of Service |</li>
+                    <li>Privacy Policy |</li>
+                    <li>Cookie Policy |</li>
+                    <li>Accessibility |</li>
+                    <li>Ads info |</li>
+                    <li>© 2025 X Corp</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- https://www.youtube.com/watch?v=iegMqFnVocA&list=PPSV&ab_channel=CodeWithHarry -->
