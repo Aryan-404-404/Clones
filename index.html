@@ -11,51 +11,52 @@
 
 <body class="bg-black text-white text-xl">
     <div class="flex container mx-auto">
-        <div class="left w-[60%] top-0 sticky z-0 h-[800px]">
+        <div class="left w-[10%] md:w-[60%] top-0 sticky z-0 h-[800px]">
             <div class="logo flex justify-center w-full my-3"><img class="invert w-12 "
                     src="Resaurces/twitter-x@logotyp.us.svg" alt="twitter logo"></div>
             <div class="sideBar flex justify-end mr-5">
                 <ul class="space-y-4 ">
                     <li
                         class="flex justify-start items-center gap-4 p-[8px] font-bold w-fit hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
-                        <i class="fa-solid fa-house"></i> Home
+                        <i class="fa-solid fa-house"></i><span class="hidden md:inline">Home</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-4 p-[8px] w-full hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
-                        <i class="fa-solid fa-magnifying-glass"></i> Explore
+                        <i class="fa-solid fa-magnifying-glass"></i><span class="hidden md:inline">Explore</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-4 p-[8px] w-fit hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
-                        <i class="fa-solid fa-bell"></i> Notifications
+                        <i class="fa-solid fa-bell"></i><span class="hidden md:inline">Notifications</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-4 p-[8px] w-fit hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
-                        <i class="fa-solid fa-message"></i> Messages
+                        <i class="fa-solid fa-message"></i><span class="hidden md:inline">Messages</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-4 p-[8px] w-fit hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
-                        <i class="fa-solid fa-table-list"></i>Lists
+                        <i class="fa-solid fa-table-list"></i><span class="hidden md:inline">Lists</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-4 p-[8px] w-fit hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
-                        <i class="fa-solid fa-bookmark"></i> Bookmark
+                        <i class="fa-solid fa-bookmark"></i><span class="hidden md:inline">Bookmark</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-4 p-[8px] w-fit hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
-                        <i class="fa-solid fa-users"></i>Communities
+                        <i class="fa-solid fa-users"></i><span class="hidden md:inline">Communities</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-4 p-[8px] w-fit hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
-                        <i class="fa-solid fa-xmark"></i>Premium
+                        <i class="fa-solid fa-xmark"></i><span class="hidden md:inline">Premium</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-4 p-[8px] w-fit hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
-                        <i class="fa-solid fa-user"></i>Profile
+                        <i class="fa-solid fa-user"></i><span class="hidden md:inline">Profile</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-4 p-[8px] w-fit hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
-                        More</li>
-                    <li><button class="bg-white text-black font-bold h-[50px] w-40 rounded-full">Post</button></li>
+                        <span class="hidden md:inline">More</span></li>
+                    <li><button class="bg-white text-black font-bold h-[50px] w-40 rounded-full hidden md:inline">Post</button></li>
+                    <li><button class="bg-white text-black font-bold h-[30px] w-[30px] rounded-full md:hidden  "><i class="fa-solid fa-upload"></i></button></li>
                 </ul>
             </div>
         </div>
@@ -63,7 +64,7 @@
 
 
 
-        <div class="mid w-full border-[1px] border-x-gray-600 border-y-black">
+        <div class="mid w-[85%] md:w-full border-[1px] border-x-gray-600 border-y-black">
             <div class="nav flex h-[50px] w-full border-b-[0.5px] border-gray-600 pt-2">
                 <div class="forU w-[50%] flex justify-center text-center text-[16px] font-bold">For you</div>
                 <div class="following w-[50%] flex justify-center text-center text-[16px] font-bold">Following</div>
@@ -231,7 +232,7 @@
 
 
 
-        <div class="right w-full top-0 sticky z-0 h-[900px]">
+        <div class="right hidden md:inline w-full top-0 sticky z-0 h-[900px]">
             <div
                 class="search flex rounded-full px-2 py-2 border-[0.5px] border-gray-600 hover:border-1 w-[70%] mx-3 my-3">
                 <div class="flex justify-center items-center searchIcon text-[16px]"><i
