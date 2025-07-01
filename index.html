@@ -11,11 +11,11 @@
 
 <body class="bg-black text-white text-xl">
     <div class="flex container mx-auto">
-        <div class="left w-[10%] md:w-[60%] top-0 sticky z-0 h-[800px]">
+        <div class="left w-[10%] md:w-[60%] top-0 sticky z-0 h-[800px] hidden md:block ">
             <div class="logo flex justify-center w-full my-3"><img class="invert w-12 "
                     src="Resaurces/twitter-x@logotyp.us.svg" alt="twitter logo"></div>
-            <div class="sideBar flex justify-end mr-5">
-                <ul class="space-y-4 ">
+            <div class="sideBar flex justify-end mr-6">
+                <ul class="space-y-2 ">
                     <li
                         class="flex justify-start items-center gap-4 p-[8px] font-bold w-fit hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
                         <i class="fa-solid fa-house"></i><span class="hidden md:inline">Home</span>
@@ -54,24 +54,32 @@
                     </li>
                     <li
                         class="flex justify-start items-center gap-4 p-[8px] w-fit hover:bg-slate-900 hover:cursor-pointer hover:rounded-full">
-                        <span class="hidden md:inline">More</span></li>
-                    <li><button class="bg-white text-black font-bold h-[50px] w-40 rounded-full hidden md:inline">Post</button></li>
-                    <li><button class="bg-white text-black font-bold h-[30px] w-[30px] rounded-full md:hidden  "><i class="fa-solid fa-upload"></i></button></li>
+                        <i class="fa-solid fa-comment-dots"></i><span class="hidden md:inline">More</span>
+                    </li>
+                    <li><button
+                            class="bg-white text-black font-bold h-[50px] w-40 rounded-full hidden md:inline">Post</button>
+                    </li>
+                    <li><button class="bg-white text-black font-bold h-[30px] w-[30px] rounded-full md:hidden  "><i
+                                class="fa-solid fa-upload"></i></button></li>
                 </ul>
             </div>
         </div>
 
 
-
-
-        <div class="mid w-[85%] md:w-full border-[1px] border-x-gray-600 border-y-black">
-            <div class="nav flex h-[50px] w-full border-b-[0.5px] border-gray-600 pt-2">
-                <div class="forU w-[50%] flex justify-center text-center text-[16px] font-bold">For you</div>
-                <div class="following w-[50%] flex justify-center text-center text-[16px] font-bold">Following</div>
+        <div class="mid w-full border-[1px] border-x-gray-600 border-y-black">
+            <div class="nav flex z-10 top-0 sticky bg-black h-[50px] w-full border-b-[0.5px] border-gray-600 pt-3">
+                <div class="forU w-[50%] flex justify-center relative">
+                    <div class="text-[16px] font-bold text-white">For you</div>
+                    <div class="absolute bottom-[-3.5px] w-1/2 h-[4px] bg-blue-400 rounded-full"></div>
+                </div>
+                <div class="following w-[50%] flex justify-center text-center text-[16px] font-bold text-gray-400">
+                    Following</div>
             </div>
-            <div class="postbtnn my-5 border-b-[0.5px] border-gray-600 pb-5">
+            <div class="postbtnn hidden md:block my-5 border-b-[0.5px] border-gray-600 pb-5">
                 <div class=" flex mx-5">
-                    <div class="img h-[40px] w-[40px] bg-amber-500 rounded-full"><img class="rounded-full" src="https://lh3.googleusercontent.com/a/ACg8ocLeO9esWtfc7WW_7u3iTvheIqUMAO8QmEE1nVbbw8QhSsjSkSAj=s360-c-no" alt="profileIMG"></div>
+                    <div class="img h-[40px] w-[40px] bg-amber-500 rounded-full"><img class="rounded-full"
+                            src="https://lh3.googleusercontent.com/a/ACg8ocLeO9esWtfc7WW_7u3iTvheIqUMAO8QmEE1nVbbw8QhSsjSkSAj=s360-c-no"
+                            alt="profileIMG"></div>
                     <h2 class="ml-3 opacity-[0.6]">What's happening?</h2>
                 </div>
                 <div class="reply border-b-[0.5px] border-gray-600 pb-3 mx-5">
@@ -110,7 +118,7 @@
                             <img class="rounded-2xl"
                                 src="https://pbs.twimg.com/media/Gud80neaoAU1Dao?format=jpg&name=small" alt="image">
                         </div>
-                        <div class="interactions w-full flex gap-15 mt-3 ml-2">
+                        <div class="interactions w-full flex gap-6 md:gap-15 mt-3 ml-2">
                             <div class="comment text-[14px] text-gray-500"><i
                                     class="fa-regular fa-comment text-gray-500 text-[16px]"></i> 102</div>
                             <div class="repost text-[14px] text-gray-500"> <i
@@ -119,7 +127,7 @@
                                     class="fa-regular fa-heart text-gray-500 text-[16px]"></i> 12k</div>
                             <div class="view text-[14px] text-gray-500"> <i
                                     class="fa-solid fa-chart-simple text-gray-500 text-[16px]"></i> 80k</div>
-                            <div class="save text-[14px] text-gray-500"> <i
+                            <div class="save hidden md:block text-[14px] text-gray-500"> <i
                                     class="fa-regular fa-bookmark text-gray-500 text-[16px]"></i></div>
                             <div class="share text-[14px] text-gray-500"><i
                                     class="fa-solid fa-arrow-up-from-bracket text-gray-500 text-[16px]"></i></div>
@@ -143,7 +151,7 @@
                             चांद-भैरव और फूलो-झानो के साथ ही उन सभी वीर-वीरांगनाओं का हृदय से नमन और वंदन, जिन्होंने
                             विदेशी हुकूमत के अत्याचार के खिलाफ लड़ते हुए अपने जीवन का बलिदान कर दिया। उनकी शौर्यगाथा देश
                             की हर पीढ़ी को मातृभूमि के स्वाभिमान की रक्षा के लिए प्रेरित करती रहेगी।</div>
-                        <div class="interactions w-full flex gap-15 mt-3 ml-2">
+                        <div class="interactions w-full flex gap-6 md:gap-15 mt-3 ml-2">
                             <div class="comment text-[14px] text-gray-500"><i
                                     class="fa-regular fa-comment text-gray-500 text-[16px]"></i> 102</div>
                             <div class="repost text-[14px] text-gray-500"> <i
@@ -152,7 +160,7 @@
                                     class="fa-regular fa-heart text-gray-500 text-[16px]"></i> 12k</div>
                             <div class="view text-[14px] text-gray-500"> <i
                                     class="fa-solid fa-chart-simple text-gray-500 text-[16px]"></i> 80k</div>
-                            <div class="save text-[14px] text-gray-500"> <i
+                            <div class="save hidden md:block text-[14px] text-gray-500"> <i
                                     class="fa-regular fa-bookmark text-gray-500 text-[16px]"></i></div>
                             <div class="share text-[14px] text-gray-500"><i
                                     class="fa-solid fa-arrow-up-from-bracket text-gray-500 text-[16px]"></i></div>
@@ -176,7 +184,7 @@
                             <img class="rounded-2xl"
                                 src="https://pbs.twimg.com/media/Gun2MHAXYAAhVly?format=jpg&name=900x900" alt="image">
                         </div>
-                        <div class="interactions w-full flex gap-15 mt-3 ml-2">
+                        <div class="interactions w-full flex gap-6 md:gap-15 mt-3 ml-2">
                             <div class="comment text-[14px] text-gray-500"><i
                                     class="fa-regular fa-comment text-gray-500 text-[16px]"></i> 102</div>
                             <div class="repost text-[14px] text-gray-500"> <i
@@ -185,7 +193,7 @@
                                     class="fa-regular fa-heart text-gray-500 text-[16px]"></i> 12k</div>
                             <div class="view text-[14px] text-gray-500"> <i
                                     class="fa-solid fa-chart-simple text-gray-500 text-[16px]"></i> 80k</div>
-                            <div class="save text-[14px] text-gray-500"> <i
+                            <div class="save hidden md:block text-[14px] text-gray-500"> <i
                                     class="fa-regular fa-bookmark text-gray-500 text-[16px]"></i></div>
                             <div class="share text-[14px] text-gray-500"><i
                                     class="fa-solid fa-arrow-up-from-bracket text-gray-500 text-[16px]"></i></div>
@@ -210,7 +218,7 @@
                                 src="https://imgs.search.brave.com/_cEbP-uDU0rgZrh6uoELJfw2xjq2ogQGdnlEPTHIdJg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTM3/MzMxNTAwL3Bob3Rv/L3Byb2dyYW1taW5n/LWNvZGUtYWJzdHJh/Y3QtdGVjaG5vbG9n/eS1iYWNrZ3JvdW5k/LW9mLXNvZnR3YXJl/LWRldmUuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPWpsWWVz/OFpmbkNtRDBsTG4t/dkt2elFvS1hyV2FF/Y1Z5cEhuQjVNdU8t/Zzg9"
                                 alt="image">
                         </div>
-                        <div class="interactions w-full flex gap-15 mt-3 ml-2">
+                        <div class="interactions w-full flex gap-6 md:gap-15 mt-3 ml-2">
                             <div class="comment text-[14px] text-gray-500"><i
                                     class="fa-regular fa-comment text-gray-500 text-[16px]"></i> 102</div>
                             <div class="repost text-[14px] text-gray-500"> <i
@@ -219,7 +227,7 @@
                                     class="fa-regular fa-heart text-gray-500 text-[16px]"></i> 12k</div>
                             <div class="view text-[14px] text-gray-500"> <i
                                     class="fa-solid fa-chart-simple text-gray-500 text-[16px]"></i> 80k</div>
-                            <div class="save text-[14px] text-gray-500"> <i
+                            <div class="save hidden md:block text-[14px] text-gray-500"> <i
                                     class="fa-regular fa-bookmark text-gray-500 text-[16px]"></i></div>
                             <div class="share text-[14px] text-gray-500"><i
                                     class="fa-solid fa-arrow-up-from-bracket text-gray-500 text-[16px]"></i></div>
@@ -251,7 +259,9 @@
             <div class="follow_suggestion w-[70%] mx-5 my-5 p-2 border-[0.5px] border-gray-600 rounded-2xl">
                 <h2 class="text-[20px] font-bold my-2 ml-2">Who to follow</h2>
                 <div class="acc flex justify-start gap-2 ml-2 my-4">
-                    <div class="profile h-[40px] w-[40px] bg-red-50 rounded-full"><img class="rounded-full" src="https://imgs.search.brave.com/CJz-7msFpIgH-VCe0qeqhq8E7ZS7wr_k8w626tKi9gA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9paDEu/cmVkYnViYmxlLm5l/dC9pbWFnZS4xMjI5/MzE5MTQuNDYxNS9z/dCxzbWFsbCw1MDd4/NTA3LXBhZCw2MDB4/NjAwLGY4ZjhmOC51/Mi5qcGc" alt=""></div>
+                    <div class="profile h-[40px] w-[40px] bg-red-50 rounded-full"><img class="rounded-full"
+                            src="https://imgs.search.brave.com/CJz-7msFpIgH-VCe0qeqhq8E7ZS7wr_k8w626tKi9gA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9paDEu/cmVkYnViYmxlLm5l/dC9pbWFnZS4xMjI5/MzE5MTQuNDYxNS9z/dCxzbWFsbCw1MDd4/NTA3LXBhZCw2MDB4/NjAwLGY4ZjhmOC51/Mi5qcGc"
+                            alt=""></div>
                     <div class="name text-[16px]">
                         <div class="font-bold">ISRO</div>
                         <div class="font-light">@isro</div>
@@ -262,7 +272,9 @@
                     </div>
                 </div>
                 <div class="acc flex justify-start gap-2 ml-2 my-4">
-                    <div class="profile h-[40px] w-[40px] bg-red-50 rounded-full"><img class="rounded-full" src="https://pbs.twimg.com/profile_images/1562753500726976514/EPSUNyR3_400x400.jpg" alt=""></div>
+                    <div class="profile h-[40px] w-[40px] bg-red-50 rounded-full"><img class="rounded-full"
+                            src="https://pbs.twimg.com/profile_images/1562753500726976514/EPSUNyR3_400x400.jpg" alt="">
+                    </div>
                     <div class="name text-[16px]">
                         <div class="font-bold">Virat Kohli</div>
                         <div class="font-light">@imVKohli</div>
@@ -273,7 +285,9 @@
                     </div>
                 </div>
                 <div class="acc flex justify-start gap-2 ml-2 my-4">
-                    <div class="profile h-[40px] w-[40px] bg-red-50 rounded-full"><img class="rounded-full" src="https://pbs.twimg.com/profile_images/1911832239635091456/v-0F5atF_400x400.jpg" alt=""></div>
+                    <div class="profile h-[40px] w-[40px] bg-red-50 rounded-full"><img class="rounded-full"
+                            src="https://pbs.twimg.com/profile_images/1911832239635091456/v-0F5atF_400x400.jpg" alt="">
+                    </div>
                     <div class="name text-[16px]">
                         <div class="font-bold">Steve Harvey</div>
                         <div class="font-light">@IAmSteveHarvey</div>
@@ -284,7 +298,9 @@
                     </div>
                 </div>
                 <div class="acc flex justify-start gap-2 ml-2 my-4">
-                    <div class="profile h-[40px] w-[40px] bg-red-50 rounded-full"><img class="rounded-full" src="https://pbs.twimg.com/profile_images/1810258334651494400/Gc3PZMyU_400x400.jpg" alt=""></div>
+                    <div class="profile h-[40px] w-[40px] bg-red-50 rounded-full"><img class="rounded-full"
+                            src="https://pbs.twimg.com/profile_images/1810258334651494400/Gc3PZMyU_400x400.jpg" alt="">
+                    </div>
                     <div class="name text-[16px]">
                         <div class="font-bold">Rohit Sharma</div>
                         <div class="font-light">@IamRo45</div>
@@ -295,7 +311,9 @@
                     </div>
                 </div>
                 <div class="acc flex justify-start gap-2 ml-2 my-4">
-                    <div class="profile h-[40px] w-[40px] bg-red-50 rounded-full"><img class="rounded-full" src="https://pbs.twimg.com/profile_images/1404378291599937536/b-r3SWlW_400x400.jpg" alt=""></div>
+                    <div class="profile h-[40px] w-[40px] bg-red-50 rounded-full"><img class="rounded-full"
+                            src="https://pbs.twimg.com/profile_images/1404378291599937536/b-r3SWlW_400x400.jpg" alt="">
+                    </div>
                     <div class="name text-[16px]">
                         <div class="font-bold">ICC</div>
                         <div class="font-light">@ICC</div>
@@ -320,7 +338,26 @@
             </div>
         </div>
     </div>
+    <div
+        class="bottomNav bottom-0 w-[100vw] z-10 h-12 sticky items-center md:hidden bg-black border-t-[0.5px] border-gray-500">
+        <ul class="pt-2 flex gap-12 justify-center items-center">
+            <li class="">
+                <i class="fa-solid fa-house"></i>
+            </li>
+            <li class="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </li>
+            <li class="">
+                <i class="fa-solid fa-bell"></i>
+            </li>
+            <li class="">
+                <i class="fa-solid fa-message"></i>
+            </li>
+            <li class="">
+                <i class="fa-solid fa-user"></i>
+            </li>
+        </ul>
+    </div>
 </body>
 
 </html>
-<!-- https://www.youtube.com/watch?v=iegMqFnVocA&list=PPSV&ab_channel=CodeWithHarry -->
